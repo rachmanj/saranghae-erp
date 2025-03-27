@@ -149,6 +149,7 @@ class InventoryResource extends Resource
     {
         return [
             RelationManagers\PartnersRelationManager::class,
+            RelationManagers\WarehousesRelationManager::class,
         ];
     }
 

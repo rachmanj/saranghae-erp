@@ -14,4 +14,9 @@ class Inventory extends Model
             ->withPivot('price', 'quantity')
             ->withTimestamps();
     }
+    
+    public function warehouseStocks()
+    {
+        return $this->hasMany(InventoryWarehouse::class);
+    }
 }
